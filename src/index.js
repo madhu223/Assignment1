@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import GridView from './routes/gridView';
 import TilesView from './routes/tilesView';
+import Dashboard from './Dashboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const rootElement = document.getElementById('root');
@@ -10,6 +11,7 @@ render(
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<App />} />
+      <Route path='/dashboard' element={<Dashboard />}></Route>
       <Route path='gridView' element={<GridView />} />
       <Route path='tilesView' element={<TilesView />} />
     </Routes>
